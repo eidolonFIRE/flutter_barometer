@@ -16,9 +16,9 @@ import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 
 /**
- * FlutterBarometerPlugin
+ * FlutterBarometer
  */
-public class FlutterBarometerPlugin implements FlutterPlugin, MethodCallHandler, SensorEventListener {
+public class FlutterBarometer implements FlutterPlugin, MethodCallHandler, SensorEventListener {
     private MethodChannel channel;
     private EventChannel stream;
     private SensorManager sensorManager;

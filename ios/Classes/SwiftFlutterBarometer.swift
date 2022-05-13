@@ -63,12 +63,6 @@ public class SwiftFlutterBarometerPlugin: NSObject, FlutterPlugin, FlutterStream
     }
     
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-        // これが呼ばれた時に
-        if call.method == "getPlatformVersion" {
-            // これを返す
-            result("iOS " + UIDevice.current.systemVersion)
-        }
-        
         if call.method == "getCurrentPressure" {
             result(self.pressure)
         }

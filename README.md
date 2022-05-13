@@ -1,4 +1,4 @@
-# flutter_barometer_plugin
+# flutter_barometer
 
 This plugin makes it easier to use barometer of devices.
 
@@ -10,14 +10,14 @@ Run this command:
 
 With Flutter:
 
-` $ flutter pub add flutter_barometer_plugin`
+` $ flutter pub add flutter_barometer`
 
 This will add a line like this to your package's pubspec.yaml (and run an implicit dart pub get):
 
 
 ``` yaml
 dependencies: 
-  flutter_barometer_plugin: ^0.0.1+3
+  flutter_barometer: ^0.0.1+3
 ```
 
 Alternatively, your editor might support flutter pub get. Check the docs for your editor to learn more.
@@ -25,7 +25,7 @@ Alternatively, your editor might support flutter pub get. Check the docs for you
 Import it
 Now in your Dart code, you can use:
 
-`import 'package:flutter_barometer_plugin/flutter_barometer.dart';`
+`import 'package:flutter_barometer/flutter_barometer.dart';`
 
 ## Usage 
 
