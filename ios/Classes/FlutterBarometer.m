@@ -1,4 +1,4 @@
-#import "FlutterBarometerPlugin.h"
+#import "FlutterBarometer.h"
 #if __has_include(<flutter_barometer/flutter_barometer-Swift.h>)
 #import <flutter_barometer/flutter_barometer-Swift.h>
 #else
@@ -8,8 +8,8 @@
 #import "flutter_barometer-Swift.h"
 #endif
 
-@implementation FlutterBarometerPlugin
+@implementation FlutterBarometer
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
-  [SwiftFlutterBarometerPlugin registerWithRegistrar:registrar];
+  [SwiftFlutterBarometer registerWithRegistrar:registrar];
 }
 @end

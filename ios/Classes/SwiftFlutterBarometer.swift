@@ -2,7 +2,7 @@ import Flutter
 import UIKit
 import CoreMotion
 
-public class SwiftFlutterBarometerPlugin: NSObject, FlutterPlugin, FlutterStreamHandler {
+public class SwiftFlutterBarometer: NSObject, FlutterPlugin, FlutterStreamHandler {
     var altimeter:CMAltimeter?
     var pressure:Double = 0.0
     var sinkOnChanged: FlutterEventSink?
@@ -35,7 +35,7 @@ public class SwiftFlutterBarometerPlugin: NSObject, FlutterPlugin, FlutterStream
     public static func register(with registrar: FlutterPluginRegistrar) {
         let channel = FlutterMethodChannel(name: "flutter_barometer", binaryMessenger: registrar.messenger())
         let stream = FlutterEventChannel(name: "pressureStream", binaryMessenger: registrar.messenger())
-        let instance = SwiftFlutterBarometerPlugin()
+        let instance = SwiftFlutterBarometer()
         registrar.addMethodCallDelegate(instance, channel: channel)
         stream.setStreamHandler(instance)
     }

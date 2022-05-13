@@ -1,4 +1,4 @@
 #import <Flutter/Flutter.h>
 
-@interface FlutterBarometerPlugin : NSObject<FlutterPlugin>
+@interface FlutterBarometer : NSObject<FlutterPlugin>
 @end
